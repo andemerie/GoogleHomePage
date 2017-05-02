@@ -3,6 +3,12 @@ body {
 }
 
 #upper_part {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#aux {
     float: right;
     margin: 16px 30px;
     font: 13px Arial, sans-serif;
@@ -58,6 +64,108 @@ body {
     box-shadow: inset 0 2px 0 rgba(0,0,0,.15);
     background: #3c78dc;
     background: -webkit-linear-gradient(top, #3c7ae4, #3f76d3);
+}
+
+#central_part {
+    margin: auto;
+    margin-top: 198px;
+    width: 590px;
+}
+
+#logo {
+    height: 92px;
+    width: 272px;
+    margin: auto;
+    background: url(google_logo.png);
+    background-size: 272px 92px;
+}
+
+#logo_subtext {
+    position: relative;
+    top: 76px;
+    left: 215px;
+    color: #4285f4;
+    font: 16px/16px Arial, sans-serif;
+}
+
+#search_line {
+    height: 44px;
+    width: 584px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+#search_line:hover {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+#search_line > * {
+    vertical-align: middle;
+}
+
+#search {
+    display: inline-block;
+    height: 34px;
+    width: 503px;
+    margin: 5px 16px;
+    padding: 0;
+    border: none;
+    outline: none;
+    font: 16px Arial,sans-serif;
+}
+
+#by_voice {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background: url(google_microphone.png);
+    background-size: 24px 24px;
+}
+
+#buttons {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.button {
+    height: 36px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    background-color: #f2f2f2;
+    color: #757575;
+    font: bold 13px/27px Arial, sans-serif;
+}
+
+.button:hover {
+    border: 1px solid #c6c6c6;
+    background-color: #f8f8f8;
+    background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+    color: black;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.button:focus {
+    border: 1px solid #4d90fe;
+    outline: none
+}
+
+#page_language {
+    margin-top: 12px;
+    text-align: center;
+    font: small/28px Arial,sans-serif;
+}
+
+#page_language a {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+#page_language a:hover {
+    text-decoration: underline;
 }
 
 #footer {
