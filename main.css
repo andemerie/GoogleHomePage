@@ -34,7 +34,7 @@ body {
     width: 20px;
     margin-right: 15px;
     outline: none;
-    background-image: url(google_apps.png);
+    background-image: url(images/google_apps.png);
     background-size: 20px 20px;
     opacity: .55;
 }
@@ -76,7 +76,7 @@ body {
     height: 92px;
     width: 272px;
     margin: auto;
-    background: url(google_logo.png);
+    background: url(images/google_logo.png);
     background-size: 272px 92px;
 }
 
@@ -120,7 +120,7 @@ body {
     display: inline-block;
     height: 24px;
     width: 24px;
-    background: url(google_microphone.png);
+    background: url(images/google_microphone.png);
     background-size: 24px 24px;
 }
 
