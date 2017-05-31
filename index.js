@@ -12,6 +12,7 @@ var google_apps = document.getElementById('google_apps');
 var hr = document.querySelector('hr');
 var more_apps_ul = document.getElementById('more_apps_ul');
 var even_more = document.getElementById('even_more');
+var search_input = document.getElementById('search');
 
 search_line.addEventListener('focus', function () {
     this.classList.add('focused');
@@ -66,3 +67,18 @@ more.onclick = function() {
     var apps_menu = document.getElementById("apps_menu");
     apps_menu.scrollTop = apps_menu.scrollHeight;
 };
+
+var search_button = document.getElementById('search_button');
+
+function search() {
+    var text_to_search = search_input.value;
+    var query_string = 'https://www.google.by/search?q=' + text_to_search;
+    window.location.href = query_string;
+}
+
+search_button.onclick = search;
+search_input.addEventListener('keypress', function (event) {
+    if (event.keyCode == 13) {
+        search();
+    }
+});
