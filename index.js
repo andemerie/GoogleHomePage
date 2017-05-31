@@ -72,8 +72,10 @@ var search_button = document.getElementById('search_button');
 
 function search() {
     var text_to_search = search_input.value;
-    var query_string = 'https://www.google.by/search?q=' + text_to_search;
-    window.location.href = query_string;
+    if (text_to_search !== '') {
+        var query_string = 'https://www.google.by/search?q=' + text_to_search;
+        window.location.href = query_string;
+    }
 }
 
 search_button.onclick = search;
